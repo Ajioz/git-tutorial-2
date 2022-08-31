@@ -1,53 +1,63 @@
-<html style="background-color: black">
-  <div
-    id="my_bouncing_box"
-    style="
-      background-color: blue;
-      border-radius: 3px;
-      position: absolute;
-      left: 0px;
-      top: 0px;
-      min-width: 100px;
-      min-height: 100px;
-      text-align: center;
-      font-weight: bold;
-      color: #999;
-    "
-  >
-    Ajioz_box
-  </div>
-  <script type="text/javascript">
-    let bouncing_box = document.querySelector("#my_bouncing_box");
-    let width = window.innerWidth - 100;
-    let height = window.innerHeight - 100;
-
-    (xspeed = 1), (yspeed = 1);
-    (xpos = 0), (ypos = 0);
-
-    function bounce_box() {
-      xpos = xpos + xspeed;
-      ypos = ypos + yspeed;
-
-      if (xpos <= 0) {
-        xspeed = 1;
-      }
-      if (ypos <= 0) {
-        yspeed = 1;
-      }
-      if (xpos >= width) {
-        xspeed *= -1;
-      }
-      if (ypos >= height) {
-        yspeed *= -1;
-      }
-
-      set_co_ordinate(xpos, ypos);
-    }
-
-    function set_co_ordinate(left, head) {
-      bouncing_box.style.left = left + "px";
-      bouncing_box.style.top = head + "px";
-    }
-    setInterval(bounce_box, 10);
-  </script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black"></body>>
+    <div
+        id="my_bouncing_box"
+        style="
+          background-color: blue;
+          border-radius: 3px;
+          position: absolute;
+          left: 0px;
+          top: 0px;
+          min-width: 100px;
+          min-height: 100px;
+          text-align: center;
+          font-weight: bold;
+          color: #999;
+        "
+      >
+        Ajioz_box
+      </div>
+      <script type="text/javascript">
+        let bouncing_box = document.querySelector("#my_bouncing_box");
+        let width = window.innerWidth - 100;
+        let height = window.innerHeight - 100;
+    
+        (xspeed = 1), (yspeed = 1);
+        (xpos = 0), (ypos = 0);
+    
+        function bounce_box() {
+          xpos = xpos + xspeed;
+          ypos = ypos + yspeed;
+    
+          if (xpos <= 0) {
+            xspeed = 1;
+          }
+          if (ypos <= 0) {
+            yspeed = 1;
+          }
+          if (xpos >= width) {
+            xspeed *= -1;
+          }
+          if (ypos >= height) {
+            yspeed *= -1;
+          }
+    
+          set_co_ordinate(xpos, ypos);
+        }
+    
+        function set_co_ordinate(left, head) {
+          bouncing_box.style.left = left + "px";
+          bouncing_box.style.top = head + "px";
+        }
+        setInterval(bounce_box, 10);
+      </script>
+</body>
 </html>
+

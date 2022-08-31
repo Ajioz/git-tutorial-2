@@ -6,6 +6,6 @@ app.get('/', (req, res) => {
 });
 
 
-const port = process.env || 3001;
+const port = process.env || 3002;
 
 app.listen(()=> console.log(`Server running on port http://127.0.0.1:{port}...`));

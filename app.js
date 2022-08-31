@@ -50,3 +50,6 @@ const my_spaceship = (ship) => {
 
 console.log(my_spaceship('AAAA'));
 
+let sub_number = (a, b) => {
+    return a - b;
+}

@@ -1,0 +1,1 @@
+process.argv.slice(2).forEach((event) => console.log(`${event}`))
